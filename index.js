@@ -255,12 +255,10 @@ function getOlderCars(inv, year) {
 */
 function getGermanCars(arr) {
   let aN = [];
-  let count = 0;
   for (var i = 0; i < arr.length; i++) {
-    if (arr[i - 1].car_make === `Audi` || `Mercedes-Benz` || `Volkswagen` || `BMW`) {
+    if ((arr[i].car_make === ("Audi")) || (arr[i].car_make === ("Mercedes-Benz")) || (arr[i].car_make === ("Volkswagen")) || (arr[i].car_make === ("BMW"))) {
       aN.push(arr[i]);
     }
-    count++;
   }
   return aN;
 }
